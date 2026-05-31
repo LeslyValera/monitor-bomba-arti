@@ -17,6 +17,21 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+header[data-testid="stHeader"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
+#MainMenu, footer, div[data-testid="stToolbar"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.block-container {
+    padding-top: 2rem !important;
+}
+            
 html, body, [class*="css"] {
     font-family: 'DM Sans', sans-serif;
 }
