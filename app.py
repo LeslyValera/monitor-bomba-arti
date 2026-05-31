@@ -12,7 +12,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 1. INYECTAR FONT AWESOME Y CSS
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
@@ -128,7 +127,7 @@ except Exception as e:
 
 with st.sidebar:
     st.title(":material/engineering: ARTI")
-    st.caption("Monitor Predictivo Industrial")
+    st.caption("Monitor Predictivo")
     st.write("---")
     st.subheader(":material/tune: Control de Sensores")
     vibracion   = st.slider("Vibración (mm/s)",  0.0,  6.0,  3.5, 0.1)
@@ -223,7 +222,6 @@ with tab2:
     
     fig = px.line(df, x='Dia Prueba', y=sensor_sel, color='Tipo_Falla', markers=True, color_discrete_sequence=colores)
     
-    # Se ajustaron los colores del gráfico de Plotly para combinar con el tema claro
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
         font_family="DM Sans", font_color="#475569",
