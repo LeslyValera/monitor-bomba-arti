@@ -205,7 +205,7 @@ with tab1:
             <div class="telemetry-row"><span class="telemetry-key"><i class="fa-solid fa-water" style="width:20px;"></i> CAUDAL</span><span>{caudal} m³/h</span></div>
             <br>
             <div class="telemetry-header" style="margin-bottom:5px;">RESULTADO PREDICTIVO</div>
-            <div class="diag-value"{falla.upper()}</div>
+            <div class="diag-value">>>> {falla.upper()}</div>
         </div>
         """, unsafe_allow_html=True)
 
